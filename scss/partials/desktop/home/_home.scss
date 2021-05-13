@@ -1,0 +1,70 @@
+
+
+
+@media (min-width: $breakpoint-tablet) {
+    .homeContainer{
+        grid-template-columns: repeat(64, 1fr);
+        grid-template-rows: repeat(35, 1fr);
+    
+        .homeTitles{
+            font-size: $fontSize40Desk;
+            line-height: $fontSize40Desk;
+        }
+    
+        .upcomingExhibition{
+            grid-column: 40 / 61;
+            grid-row: 7 / 12;
+            line-height: 3.90625vw;
+        }
+    
+        .workLink{
+            grid-column: 21 / 26;
+            grid-row: 8 / 11;
+        }
+    
+        .archiveLink{
+            grid-column: 25 / 30;
+            grid-row: 15 / 17;
+        }
+    
+        .aboutLink{
+            grid-column: 6 / 12;
+            grid-row: 16 / 21;
+        }
+    
+        .contactLink{
+            grid-column: 20 / 28;
+            grid-row: 20 / 25;
+            
+        }
+    
+        .studioVisitLink{
+            grid-column: 37 / 59;
+            grid-row: 18 / 22;
+            transform: translateY(0px);
+        }
+    
+        .emailLink{
+            grid-column: 3 / 25;
+            grid-row: 26 / 31;
+            span{
+                font-size: $fontSize36Desk;
+            }
+        }
+    
+        .phoneLink{
+            grid-column: 3 / 22;
+            grid-row: 29 / 34;
+            transform: translateY(0px);
+        }
+    
+        .lastUpdate{
+            grid-column: 48 / 63;
+            grid-row: 27 / 34;
+            font-size: $fontSize20Desk;
+            line-height: $fontSize20Desk;
+        }
+    }
+}
+
+

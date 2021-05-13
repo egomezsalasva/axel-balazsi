@@ -1,0 +1,22 @@
+
+
+
+@media (min-width: $breakpoint-tablet) {
+    .archiveContainer{    
+        grid-template-columns: repeat(80, 1fr);
+        grid-template-rows: repeat(44, 1fr);
+
+        a{
+            grid-column: 7 / 30;
+            grid-row: 11 / 14;
+            h1{
+                font-size: $fontSize40Desk;
+                line-height: $fontSize40Desk;
+                font-weight: 300;
+            }
+        }  
+    }
+}
+
+@import './_theFlatpackOfEverydayObjects';
+@import './_thingsAroundUsWeDontSee';

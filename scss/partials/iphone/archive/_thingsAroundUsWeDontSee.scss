@@ -1,0 +1,145 @@
+
+
+.thingsAroundUsWeDontSeeContainerPhone{
+
+    .installationBlock{
+        // header top margin + header height + icon extra height + margin for block
+        margin-top: calc( 12.5937vh + 80px);
+
+        img{
+            width: 100vw;
+        }
+
+        .details{
+            // 15 pixel side margins
+            // width: calc(100vw - 15px - 15px);
+            width: calc(100vw - 25px - 25px);
+            // margin: 20px auto 0;
+            margin: 30px auto 0;
+            // Default spacing correction
+            transform: translateY(-5px);
+
+            h3{
+                font-size: 1.4rem;
+                line-height: 14px;
+            }
+    
+            p{
+                margin-top: 10px;
+                font-size: 1.3rem;
+                line-height: 17px;
+            }
+        }   
+    }
+
+    #movingTitle{
+        margin-top: 80px;
+        width: 100vw!important;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #E6E6E6;
+    }
+    
+    #marquee01 {
+        display: inline-block;
+        animation: marquee 10s linear infinite;
+
+        font-size: 2rem;
+        line-height: 2.8rem;
+        font-weight: 300;
+    }
+    
+    #marquee02 {
+        display: inline-block;
+        animation: marquee2 10s linear infinite;
+        animation-delay: 5s;
+
+        font-size: 2rem;
+        line-height: 2.8rem;
+        font-weight: 300;
+    }
+    
+    @keyframes marquee {
+        from {
+        transform: translateX(100%);
+        }
+        to {
+        transform: translateX(-100%);
+        }
+    }
+    
+    @keyframes marquee2 {
+        from {
+        transform: translateX(0%);
+        }
+        to {
+        transform: translateX(-200%);
+        }
+    }
+
+    .pieceBlock{
+        margin-top: 100px;
+
+        .horizontalPiece{
+            width: 100vw;
+        }
+
+        .verticalPiece{
+            width: 68vw;
+            margin: 0 16vw;
+        }
+
+        .squarePiece{
+            @include squarePiece;
+        }
+
+        .details{
+            @include detailsPiece;
+        } 
+
+        .slideshowNav{
+            position: relative;
+            height: 43px;
+            transform: translateY(-5px);
+            margin-top: 15px;
+
+            .prevButtonMob{
+                @include prevButtonMob;
+            }
+            .nextButtonMob{
+                @include nextButtonMob;
+            }
+            .disabledButtonMob{
+                @include disabledButtonMob;
+            }
+        }
+    }
+
+    .arangeVisitContainer{
+        margin-top: 80px;
+        border-top: 2px solid #E6E6E6;
+        a{
+            color: #000;
+
+            .arrangeVisitButton{
+                margin: 60px auto; 
+                border: 1px solid #000000;
+                width: 315px;
+                width: 84vw;
+                height: 42px;
+                cursor: pointer;
+    
+                font-size: 13px;
+                text-align: center;
+                line-height: 43px;
+                font-weight: 700;
+            }
+        }
+        
+    }
+
+}
+
+.thingsAroundUsWeDontSeeContainerDesktop{
+    display: none;
+}

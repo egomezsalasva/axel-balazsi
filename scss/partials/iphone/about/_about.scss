@@ -1,0 +1,31 @@
+.aboutContainer{
+    // header top margin + header height + icon extra height + margin for block
+    margin-top: calc( 12.5937vh + 80px);
+
+    .aboutContent{
+        margin: 0 40px 28px;
+        font-size: 20px;
+        line-height: 28px;
+        h3{
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        p{
+            margin-bottom: 28px;
+        } 
+    }
+
+    .achievementsContent{
+        margin: 0 40px 100px;
+        font-size: 16px;
+        line-height: 26px;
+        h3{
+            font-weight: 700;
+            margin-bottom: 26px;
+        }
+        ul{
+            margin-bottom: 52px;
+            list-style: none;
+        } 
+    }
+}

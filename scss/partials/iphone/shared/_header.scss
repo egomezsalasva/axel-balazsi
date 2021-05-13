@@ -1,0 +1,49 @@
+//////////////////
+///// HEADER /////
+//////////////////
+
+header{
+    position: fixed;
+    background: rgba(255,255,255,0.9);
+    height: calc(12.5937vh - 2px);
+    width: calc(100vw - 4px);
+    top: 5.3vh;
+    top: 0;
+    left: 2px;
+    z-index: 200;
+    border-top: 2px solid #E6E6E6;
+
+    a{
+        color: #000;
+        .logo{
+            display: inline-block;
+            font-size: 2rem;  
+            line-height: 20px;
+            line-height: 12.5937vh;
+            font-family: $hiraKakuW6;
+            font-weight: 700;
+            padding-left: 30px;
+            // transform: translateY(3px)
+        }
+    }
+    
+    nav{
+        display: inline-block;
+        position: absolute;
+        right: 25px;
+        line-height: 12.5937vh;
+        // transform: translateY(7px);
+
+        p{
+            display: inline-block; 
+            line-height: 20px;
+            font-size: 2rem;
+            margin-right: 10px;
+            text-align: right;
+            transform: translateY(5px);
+        }
+        #hamburgerIcon{
+            transform: rotate(-45deg) translateX(-2px) translateY(6px);
+        }
+    }
+}

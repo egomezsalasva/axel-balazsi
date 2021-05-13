@@ -1,0 +1,19 @@
+
+
+@media (min-width: $breakpoint-tablet) {
+    .aboutContainer{
+        margin-top: calc( 12.5937vh + 60px );
+        .aboutContent{
+            margin: 0 6.25vw 58px;
+            line-height: 29px;
+            width: 53.5vw;
+            width: 58vw;
+        }
+        .achievementsContent{
+            margin: 0 6.25vw 60px;
+            line-height: 29px;
+            width: 53.5vw;
+            width: 58vw;
+        }
+    }  
+}

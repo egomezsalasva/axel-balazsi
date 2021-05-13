@@ -1,0 +1,30 @@
+//To Dos
+
+- Link to website of venue
+- Image fix
+- Favicon
+- Stop allow zoom on phone
+- Make website secure FTP
+
+
+---------------------------------------------------------
+
+//Things Done Github
+
+- Change speed whiteOverlay;
+- Change image and SCSS for pointer
+
+
+---------------------------------------------------------
+
+//Future Features
+
+-  Before page load reverse animation on menu
+-  Improve SubMenu Animation
+-  Make HamburgerIcon Rotate 360 instead of reverse
+-  Fix width of header from full vw to full vw - 4px
+-  Animate arrow head on viewport opacity and x
+-  smooth scroll
+-  This Image White Background Bug
+-  White box cursor on images
+-  Lazy image load

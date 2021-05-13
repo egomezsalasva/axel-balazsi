@@ -1,0 +1,33 @@
+//HEADER VARIABLES
+$headerHeight: 12.5937vh;
+
+//HEADER TABLET & DESKTOP
+@media (min-width: $breakpoint-tablet) {
+    header{
+        a{
+            .logo{
+                font-size: $fontSize40Desk;
+                transform: translateY(0);
+                padding-left: 60px;
+                transform: translateY(3px)
+            }
+        }
+        
+        nav{
+            height: $headerHeight;
+            transform: translateY(0);
+            right: 40px;
+
+            p{
+                font-size: $fontSize40Desk;
+                line-height: $headerHeight;
+                transform: translateY(0px);
+                margin-right: 15px;
+            }
+            #hamburgerIcon{
+                transform: rotate(-45deg) translateX(5px) translateY(0px);
+                cursor: pointer;
+            }
+        }
+    }
+}

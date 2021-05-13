@@ -1,0 +1,33 @@
+.archiveContainer{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(45, 1fr);
+
+    a{
+        color: #000;
+        h1{
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 300;
+        }
+    }
+
+    #link2017-2018{
+        grid-column: 5 / 22;
+        grid-row: 6 / 11;
+        align-self: end; 
+    }
+
+    #link2018-2019{
+        grid-column: 5 / 22;
+        grid-row: 10 / 15;
+        align-self: end; 
+    }
+    
+}
+
+@import './_theFlatpackOfEverydayObjects';
+@import './_thingsAroundUsWeDontSee';
+

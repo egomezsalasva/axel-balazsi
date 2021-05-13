@@ -1,0 +1,248 @@
+
+/// ZINDEX /////
+
+// whiteModal: 500
+
+
+////// MIXINS //////
+
+@mixin full-page-grid {
+    display: grid;
+    grid-template-columns: repeat(80, 1fr);
+    grid-template-rows: repeat(44, 1fr);
+    height: 100vh;
+    width: 100vw;
+}
+
+@mixin details-piece {
+    grid-column: 4 / 44;
+    grid-row: 39 / 42;
+    align-self: end;
+    font-size: 1.1rem;
+    p{
+        margin-top: 5px;
+    }
+}
+
+@mixin button-piece-prev {
+    opacity: 1;
+    position: absolute;
+    left: 6.25vw;
+    top: 43vh;
+    width: 16.4062vw;
+    height: 2.28vh;
+    cursor: pointer;
+
+    img{
+        position: absolute;
+        left: 0;
+    }
+    p{
+        position: absolute;
+        font-size: 1.3rem;
+        left: 40px;
+        font-weight: 700;
+    }
+}
+
+@mixin button-piece-next {
+    position: absolute;
+    right: 6.25vw;
+    top: 43vh;
+    width: 16.4062vw;
+    height: 2.28vh;
+    cursor: pointer;
+
+    img{
+        position: absolute;
+        right: 0;
+    }
+    p{
+        position: absolute;
+        font-size: 1.3rem;
+        right: 40px;
+        font-weight: 700;
+    }
+}
+
+@mixin  button-disabled {
+    display: none;
+    opacity: 0;
+}
+
+@mixin vertical-piece {
+    position: absolute;
+    width: 24vw;
+    top: 12.8571vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    cursor: $cursorCustom;
+}
+
+@mixin horizontal-piece {
+    position: absolute;
+    width: 42.65625vw;
+    top: 18.5714vh;
+    top: 20vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    cursor: $cursorCustom;
+}
+
+
+
+
+@media (min-width: $breakpoint-tablet) {
+
+    .theFlatpackOfEverydayObjectsContainerPhone{
+        display: none;
+    }
+
+
+    .theFlatpackOfEverydayObjectsContainerDesktop{
+        display: block;
+
+        .whiteOverlayModal{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top:0;
+            left: 0;
+            background: #fff;
+            z-index: 500;
+            opacity: 0;
+            display: none;
+        }
+
+        .theFlatpackOfEverydayObjectsTopFold{
+            @include full-page-grid;
+    
+            #installationImage{
+                height: 65.5714vh;
+                grid-column: 1 / 44;
+                grid-row: 8 / 37;
+                align-self: end;
+                cursor: $cursorCustom;
+            }
+
+            .installationDetails{
+                @include details-piece;  
+            }
+    
+            .theFlatpackOfEverydayObjectsArrangeVisit{
+                font-size: $fontSize40Desk;
+                line-height: $fontSize40Desk;
+                color: #000;
+                text-align: right;
+    
+                grid-column: 50 / 76;
+                grid-row: 39 / 42;
+                align-self: end;
+    
+            }
+    
+            .viewPieces{
+                position: absolute;
+                right: 6.25vw;
+                top: 46vh;
+                width: 26vw;
+                height: 5.71428571vh;
+    
+                h2{
+                    position: absolute;
+                    font-size: $fontSize40Desk;
+                    line-height: $fontSize40Desk;
+                    color: #000;
+                    text-align: right;
+                    font-weight: 300;
+                    top: 0;
+                    right: 30px;
+                    z-index: 25;
+                    cursor: pointer;
+                }
+    
+                .option01, .option02, .option03, .option04{
+                    position: absolute;
+                    width: 26vw;
+                    height: 5.71428571vh;
+    
+                    .arrowViewPieces{
+                        position: absolute;
+                        top: 16px;
+                        top: 2.05vh;
+                        left: 0;
+                        right: 0;
+                        width: 26vw;
+                        z-index: 0;
+                    }
+        
+                    .linkViewPieces{
+                        display: none;
+                        opacity: 0;
+                        position: absolute;
+                        z-index: 25;
+                        font-size: $fontSize20Desk;
+                        color: #000;
+                        text-align: right;
+                        right: 32px;
+                        right: 35px;
+                        top: 0.9vh;
+                    }
+                }
+            }
+        }
+
+        .theFlatpackOfEverydayObjectsFirstPiece, 
+        .theFlatpackOfEverydayObjectsSecondPiece, 
+        .theFlatpackOfEverydayObjectsThirdPiece,
+        .theFlatpackOfEverydayObjectsFourthPiece {
+            position: relative;
+            @include full-page-grid;
+
+            .verticalPiece{
+                @include vertical-piece;
+            }
+
+            .horizontalPiece{
+                @include horizontal-piece;
+            }
+
+            .prevButton{
+                @include button-piece-prev;
+            }
+            
+            .nextButton{
+                @include button-piece-next;
+            }
+
+            .disabledButton {
+                @include button-disabled;
+            }
+
+            .pieceDetails{
+                @include details-piece;
+            }
+        }
+
+        .footerContainer{
+            position: relative;
+            bottom: 0;
+            width: 100vw;
+            border-top: 2px solid #E6E6E6;
+            margin-top: 20px;
+    
+            a{
+                color: #000;
+                .arrangeVisitButton{
+                    margin: 60px auto; 
+                    @include arrange-visit-button;
+                }
+            }
+            
+        }
+
+    }
+
+}
+
+

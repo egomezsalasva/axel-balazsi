@@ -1,0 +1,30 @@
+
+
+@media (min-width: $breakpoint-tablet) {
+    .contactContainer{
+    
+        .contactDetails{
+            font-size: 40px;
+        }
+    
+        .email{
+            grid-row: 17 / 19;
+            span{
+                font-size: 32px;
+            }
+        }
+
+        .phone{
+            grid-row: 21 / 23;
+        }
+    
+        .footerContainer{
+            a{
+                .arrangeVisitButton{
+                    @include arrange-visit-button;
+                }
+            }
+            
+        }   
+    }
+}

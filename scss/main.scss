@@ -1,0 +1,62 @@
+//FONTS
+@font-face {
+    font-family: 'HiraKakuPro-W3';
+    src: url('./fonts/HiraKakuPro-W3-AlphaNum.eot');
+    src: url('./fonts/HiraKakuPro-W3-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
+        url('./fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'),
+        url('./fonts/HiraKakuPro-W3-AlphaNum.ttf') format('truetype'),
+        url('./fonts/HiraKakuPro-W3-AlphaNum.svg#HiraKakuPro-W3-AlphaNum') format('svg');
+}
+@font-face {
+    font-family: 'HiraKakuPro-W6';
+    src: url('./fonts/HiraKakuPro-W6-AlphaNum.eot');
+    src: url('./fonts/HiraKakuPro-W6-AlphaNum.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/HiraKakuPro-W6-AlphaNum.woff2') format('woff2'),
+        url('./fonts/HiraKakuPro-W6-AlphaNum.woff') format('woff'),
+        url('./fonts/HiraKakuPro-W6-AlphaNum.ttf') format('truetype'),
+        url('./fonts/HiraKakuPro-W6-AlphaNum.svg#HiraKakuPro-W6-AlphaNum') format('svg');
+}
+//VARIABLES
+$hiraKakuW3: 'HiraKakuPro-W3', serif;
+$hiraKakuW6: 'HiraKakuPro-W6', serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: $hiraKakuW3;
+    font-size: 10px;
+    color: #000;
+    letter-spacing: 0px;
+    scroll-behavior: smooth;
+    a{
+        text-decoration: none;
+    }
+};
+
+
+//IPHONE
+@import './partials/iphone/shared/_variables.scss';
+@import './partials/iphone/shared/_header.scss';
+@import './partials/iphone/shared/_mobileMenu.scss';
+
+@import './partials/iphone/home/_home.scss';
+@import './partials/iphone/work/_work.scss';
+@import './partials/iphone/archive/_archive.scss';
+@import './partials/iphone/about/_about.scss';
+@import './partials/iphone/contact/_contact.scss';
+
+
+//TABLET & DESKTOP
+@import './partials/desktop/shared/_variables.scss';
+@import './partials/desktop/shared/_header.scss';
+@import './partials/desktop/shared/_desktopMenu.scss';
+
+@import './partials/desktop/home/_home.scss';
+@import './partials/desktop/work/_work.scss';
+@import './partials/desktop/archive/_archive.scss';
+@import './partials/desktop/about/_about.scss';
+@import './partials/desktop/contact/_contact.scss';

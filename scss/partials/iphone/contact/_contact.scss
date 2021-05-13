@@ -1,0 +1,54 @@
+.contactContainer{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(45, 1fr);
+
+    .contactDetails{
+        align-self: end; 
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+        // font-weight: 700;
+
+    }
+
+    .email{
+        grid-column: 1 / 26;
+        grid-row: 16 / 18;
+        span{
+            font-size: 18px;
+        }
+    }
+
+    .phone{
+        grid-column: 1 / 26;
+        grid-row: 20 / 22;
+    }
+
+    .footerContainer{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        border-top: 2px solid #E6E6E6;
+
+        a{
+            color: #000;
+
+            .arrangeVisitButton{
+                margin: 60px auto; 
+                border: 1px solid #000000;
+                width: 84vw;
+                height: 42px;
+                cursor: pointer;
+    
+                font-size: 13px;
+                text-align: center;
+                line-height: 43px;
+                font-weight: 700;
+            }
+        }
+        
+    }   
+}

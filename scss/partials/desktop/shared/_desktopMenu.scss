@@ -1,0 +1,94 @@
+//Z-INDEX
+//Container = 50
+//GreyBG = 100
+//WhiteMenu = 100
+//LinkMenu = 125
+//LinkSubMenu = 125
+//optionsSubMenu = 100
+//FooterMenu= 100
+
+$leftMarginLinks: 50px;
+$leftMarginLinks: 60px;
+
+@media (min-width: $breakpoint-tablet) {
+    .mobileMenu{
+
+        .whiteMenu{
+            position: absolute;
+            top: calc(-46.3268vh - 12px);
+            z-index: 100;
+            width: 100vw;
+
+            .headerMenu{ 
+                height: 12.5937vh;
+            }
+
+            .linkMenu{
+                display: block;
+                //prev mobile height(6.5967vh) + 16px(2.2857) extra of font doubling
+                height: 8.8824vh;
+                border-top: 0px;
+
+                font-size: $fontSize32Desk;
+                line-height: 8.8824vh;
+                padding-left: $leftMarginLinks;
+            }
+
+            .linkSubMenu{
+                position: relative;
+                //prev mobile height(7.3463vh) + 16px(2.2857) extra of font doubling
+                height: 9.632vh;
+                line-height: 9.632vh;
+                font-size: $fontSize32Desk;
+                
+                .archiveMenu{
+                    display: inline-block;
+                    width: calc(100vw - 17.3333vw);
+                    width: calc(100vw - 9.632vw);
+                    span{
+                        padding-left: $leftMarginLinks;
+                    }
+                }
+
+                .enterSubMenu{
+                    // width: 17.3333vw;
+                    width: 9.632vh;
+                    height: 9.632vh;
+                    img{
+                        top: 4px;
+                    }
+                }
+
+            }
+
+            .optionsSubMenu{
+                height: 8.8824vh;
+                font-size: $fontSize26Desk;
+                line-height: 8.8824vh;
+                padding-left: 75px;
+            }
+        }
+
+        .footerMenu{
+            bottom: 60px;
+            left: 50px;
+            right: 50px;
+            height: 120px;
+            font-size: $fontSize32Desk;
+            
+            .email{
+                span{
+                    font-size: $fontSize28Desk;
+                }
+            }
+            .phone{
+                margin-top: 15px;
+                // margin-top: 30px;
+            }
+            .lastUpdate{
+                font-size: $fontSize26Desk;
+            }
+        }
+
+    }
+}
